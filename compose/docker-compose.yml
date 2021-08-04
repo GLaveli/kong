@@ -35,20 +35,20 @@ services:
   #######################################
   # Kong database migration
   #######################################
-  # kong-migration:
-  #   image: ${KONG_DOCKER_TAG:-kong:latest}
-  #   command: kong migrations bootstrap
-  #   networks:
-  #     - kong-net
-  #   restart: on-failure
-  #   environment:
-  #     KONG_DATABASE: postgres
-  #     KONG_PG_HOST: kong-database
-  #     KONG_PG_DATABASE: kong
-  #     KONG_PG_USER: kong
-  #     KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kong}
-  #   depends_on:
-  #     - kong-database
+  kong-migration:
+    image: ${KONG_DOCKER_TAG:-kong:latest}
+    command: kong migrations bootstrap
+    networks:
+      - kong-net
+    restart: on-failure
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_DATABASE: kong
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kong}
+    depends_on:
+      - kong-database
 
   #######################################
   # Kong: The API Gateway
