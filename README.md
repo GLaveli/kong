@@ -23,11 +23,17 @@ Navegue ate a pasta do projeto em seguida para a pasta 'compose' execute em seu 
 ```
  docker-compose up -d
 ```
+
 aguarde a instalação, ao termino suba os containers kong-postgres, compose_kong e compose_konga caso eles não subam altomaticamente.
 
-Agora basta conectar a API do Kong com o Konga acessando:
+Agora basta conectar a API do Kong com o Konga, para isso acesse a interface do Konga (acesse a plataforma)
 ```
  localhost:1337
+```
+
+para conectar ao KONG use a URL da kongnet:
+```
+ http://kong:8001
 ```
 
 ------------------------------------------
