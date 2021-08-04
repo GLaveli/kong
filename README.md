@@ -1,4 +1,4 @@
-<img src="https://github.com/GLaveli/Ahgora/blob/main/gitAssets/logo.png" width="150px" height="120px" align="left"/>
+<img src="https://github.com/GLaveli/kong/blob/main/gitAssets/logo.png" width="150px" height="120px" align="left"/>
 
 # Kong & Konga
 API Gateway + database + interface.
