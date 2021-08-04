@@ -14,7 +14,7 @@ API Gateway + database + interface.
 
 # Instalação:
 
-Abra o CMD e cri uma rede internet no docker chamada kong-net
+Abra o CMD e crie uma rede interna no docker chamada kong-net
 ```
  docker network create kong-net
 ```
@@ -25,7 +25,7 @@ Navegue ate a pasta do projeto em seguida para a pasta 'compose' execute em seu 
 ```
 aguarde a instalação, ao termino suba os containers kong-postgres, compose_kong e compose_konga caso eles não subam altomaticamente.
 
-Agora basta coectar a API do Kong com o Konga acessando:
+Agora basta conectar a API do Kong com o Konga acessando:
 ```
  localhost:1337
 ```
